@@ -1,0 +1,96 @@
+{
+  "id": "24b4d156-dd32-4ee8-8db9-1f2965fe5808",
+  "version": "2.0",
+  "name": "Microsofr_Test",
+  "url": "https://www.pdfdrive.com",
+  "tests": [{
+    "id": "2a8e69e7-26f1-4516-b50e-2c96f3b06758",
+    "name": "Test_1",
+    "commands": [{
+      "id": "5b14d78b-bfb4-4f8d-be3a-0701cbb84c18",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "847c22f5-34d6-465e-8b58-eaf809d52438",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1552x880",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "df3e197f-7af0-4b83-a928-87f2f70b532b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.files-new:nth-child(4) li:nth-child(1) h2",
+      "targets": [
+        ["css=.files-new:nth-child(4) li:nth-child(1) h2", "css:finder"],
+        ["xpath=//h2", "xpath:position"],
+        ["xpath=//h2[contains(.,'Living in the Light: A guide to personal transformation')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "81f17cfa-862b-444e-9a0d-25ca79917900",
+      "comment": "",
+      "command": "click",
+      "target": "id=download-button-link",
+      "targets": [
+        ["id=download-button-link", "id"],
+        ["linkText=Download", "linkText"],
+        ["css=#download-button-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Download')]", "xpath:link"],
+        ["xpath=//a[@id='download-button-link']", "xpath:attributes"],
+        ["xpath=//span[@id='download-button']/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '/living-in-the-light-a-guide-to-personal-transformation-d10172273.html')])[2]", "xpath:href"],
+        ["xpath=//span/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Download')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "8417e1f2-78b2-4cf3-80bd-b28f3a78b880",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Download ( PDF )",
+      "targets": [
+        ["linkText=Download ( PDF )", "linkText"],
+        ["css=.btn-user:nth-child(1)", "css:finder"],
+        ["xpath=//a[@type='button']", "xpath:attributes"],
+        ["xpath=//div[@id='alternatives']/div/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/download.pdf?id=10172273&h=84f0f3490acb0a861ce0cf97be914eed&u=cache&ext=pdf')]", "xpath:href"],
+        ["xpath=//center/div[2]/div/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Download ( PDF )')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2c2025e1-ae9a-4feb-9ece-e8fe484a920b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.text-center",
+      "targets": [
+        ["css=.text-center", "css:finder"],
+        ["xpath=//div[@id='alternatives']/div", "xpath:idRelative"],
+        ["xpath=//center/div[2]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3cc551ee-b6e6-4c25-8be5-144a64ae42a7",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "5827039b-b270-44f7-828a-4359f430ee34",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["2a8e69e7-26f1-4516-b50e-2c96f3b06758"]
+  }],
+  "urls": ["https://www.pdfdrive.com/"],
+  "plugins": []
+}
