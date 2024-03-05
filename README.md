@@ -1,1 +1,1 @@
-Used selenius IDE and Selenium Command Line Runner 
+Used Selenium IDE and Selenium Command Line Runner 
